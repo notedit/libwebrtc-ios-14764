@@ -10,7 +10,8 @@ Pod::Spec.new do |s|
                        The target audience of this document are those who want to use WebRTC Native APIs to develop native RTC applications.
                        DESC
   s.platform = :ios, '8.0'
-  s.public_header_files =  'Headers/*.h'
+  s.public_header_files =  'WebRTC/*.h'
+  s.preserve_paths = 'WebRTC/*.h'
   s.vendored_libraries = 'librtc_sdk_objc.a'
   s.framework = 'AVFoundation', 'AudioToolbox', 'CoreGraphics', 'CoreMedia', 'GLKit', 'UIKit', 'VideoToolbox'
   s.libraries = 'c', 'sqlite3', 'stdc++'
