@@ -17,4 +17,7 @@ Pod::Spec.new do |s|
   s.libraries = 'c', 'sqlite3', 'stdc++'
   s.requires_arc = true
 
+  s.xcconfig  =  { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/librtc_sdk/"',
+    'HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/librtc_sdk/"' }
+
 end
