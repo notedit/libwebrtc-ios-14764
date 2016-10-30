@@ -18,5 +18,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.source   = { :git => 'https://github.com/notedit/libwebrtc-ios-14764.git'}
 
+  s.xcconfig  =  { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/WebRTC/"' }
 
 end
