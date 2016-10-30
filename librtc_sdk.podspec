@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name         = "librtc_sdk"
+  s.name         = "WebRTC"
   s.version      = "14764"
   s.summary      = "WebRTC Video Streaming Peer Connection API's. An iOS WebRTC demo application hosted on App Engine. Builds by Pristine.io"
   s.description      = <<-DESC
@@ -16,8 +16,7 @@ Pod::Spec.new do |s|
   s.framework = 'AVFoundation', 'AudioToolbox', 'CoreGraphics', 'CoreMedia', 'GLKit', 'UIKit', 'VideoToolbox'
   s.libraries = 'c', 'sqlite3', 'stdc++'
   s.requires_arc = true
+  s.source   = { :git => 'https://github.com/notedit/libwebrtc-ios-14764.git'}
 
-  s.xcconfig  =  { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/librtc_sdk/"',
-    'HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/librtc_sdk/"' }
 
 end
