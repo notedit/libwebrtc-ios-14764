@@ -32,6 +32,12 @@ RTC_EXPORT
 
 - (instancetype)init NS_UNAVAILABLE;
 
+- (instancetype)initWithFactory:(RTCPeerConnectionFactory *)factory
+        constraints:(nullable RTCMediaConstraints *)constraints;
+
+- (void)sendSampleBuffer:(CMSampleBufferRef )sample_buffer;
+
+- (void)doSomeTest;
 
 @end
 
