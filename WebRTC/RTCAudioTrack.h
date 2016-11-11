@@ -13,7 +13,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+
+@protocol RTCAudioRenderer;
+@class RTCPeerConnectionFactory;
 @class RTCAudioSource;
+
 
 RTC_EXPORT
 @interface RTCAudioTrack : RTCMediaStreamTrack
@@ -22,6 +26,12 @@ RTC_EXPORT
 
 /** The audio source for this audio track. */
 @property(nonatomic, readonly) RTCAudioSource *source;
+
+/** Register a renderer that will render all frames received on this track. */
+- (void)addRenderer:(id<RTCAudioRenderer>)renderer;
+
+/** Deregister a renderer. */
+- (void)removeRenderer:(id<RTCAudioRenderer>)renderer;
 
 @end
 
