@@ -2,6 +2,7 @@ Pod::Spec.new do |s|
   s.name         = "WebRTC"
   s.version      = "14764"
   s.authors      =  "notedit"
+  s.homepage    = "notedit"
   s.summary      = "WebRTC Video Streaming Peer Connection API's. An iOS WebRTC demo application hosted on App Engine. Builds by Pristine.io"
   s.description      = <<-DESC
                        The WebRTC native APIs are implemented based on the following [WebRTC spec.](http://dev.w3.org/2011/webrtc/editor/webrtc.html) 
